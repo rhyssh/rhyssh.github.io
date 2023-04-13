@@ -4,10 +4,11 @@ function showLove() {
   love.classList.add("love-big");
 
   // generate posisi dan rotasi random
-  const posisi = Math.floor(Math.random() * 90) + 1;
+  const posisi = Math.round(event.clientx / window.innerWidth) * 180;
+  const posisi1 = Math.floor(event.clientY / window.innerHeight) * 180;
   const rotasi = Math.floor(Math.random() * 360) + 1;
-  love.style.top = posisi + "%";
-  love.style.left = posisi + "%";
+  love.style.translateX = posisi + "%";
+  love.style.translateY = posisi1 + "%";
   love.style.color = "lightpink";
   // love.style.transition = ".2s";
   love.style.transform = `rotate(${rotasi}deg)`;
