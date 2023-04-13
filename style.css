@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10vh;
+  font-family: monospace;
+  flex-direction: column;
+}
+
+.love {
+  color: palevioletred;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.words {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  margin-top: -40px;
+}
