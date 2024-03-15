@@ -1,0 +1,103 @@
+/* navbar */
+nav {
+  display: flex;
+  background-color: rgb(8, 7, 8);
+  /* background-color: white; */
+  justify-content: space-evenly;
+  /* padding: 20px; */
+  color: rgb(230, 193, 107);
+  height: 50px;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+nav .logo {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transform: translateX(-20vw);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  /* width: 40%; */
+}
+
+nav ul li {
+  color: rgb(230, 193, 107);
+  font-size: 17px;
+  font-weight: bold;
+  box-sizing: content-box;
+  margin-left: 30px;
+  font-family: "Exo 2", sans-serif;
+  /* background-color: black; */
+  cursor: pointer;
+  /* margin-left: 10vw; */
+  /* transform: translateX(100px); */
+}
+
+nav ul li:hover {
+  color: rgb(230, 214, 179);
+}
+
+/* close navbar */
+
+#hero {
+  background-color: black;
+  padding-top: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#text-hero {
+  color: white;
+  margin-bottom: 40px;
+}
+
+#text-hero h3 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Exo 2", sans-serif;
+  /* transform: translateY(-100px); */
+}
+.name-1 {
+  margin-bottom: 50px;
+}
+
+.name-2 {
+  padding-top: 40px;
+}
+
+#pp img {
+  width: 300px;
+  /* transform: translateY(-100px); */
+}
+
+#project {
+  padding-top: 30vh;
+  background-color: rgb(8, 7, 8);
+  height: 100vh;
+}
+
+#web,
+#design,
+#gallery {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-style: hidden;
+  letter-spacing: 1px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  color: rgb(230, 193, 107);
+}
+
+#web,
+#design,
+#gallery:focus {
+  box-shadow: 0 0 5px salmon;
+}

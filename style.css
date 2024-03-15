@@ -27,3 +27,18 @@ body {
   font-size: 25px;
   margin-top: -40px;
 }
+
+.love-big{
+  font-size: 50px;
+}
+
+.link{
+  opacity: 1;
+  transform: translateY(20px);
+  transition: .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
