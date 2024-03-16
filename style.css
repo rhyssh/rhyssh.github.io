@@ -5,6 +5,17 @@ body {
   overflow-y: hidden;
 }
 
+#icon-arrow{
+  transform: rotate(90deg);
+}
+
+#link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0%;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -34,11 +45,67 @@ body {
 
 .link{
   opacity: 1;
-  transform: translateY(20px);
   transition: .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.gerak{
+  transform: translateY(5px);
+
+}
+
+.gerak1{
+  transform: translateY(-5px);
+
 }
 
 a{
   text-decoration: none;
   color: black;
+}
+
+.hide {
+  display: none !important;
+}
+
+.move {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.move {
+  z-index: 10;
+}
+
+.page-transition {
+  position: absolute;
+  width: 100vw;
+  height: 120vh;
+  animation: move 1.5s ease 1 forwards;
+}
+
+.page-transition {
+  background-color: #000000;
+}
+
+@keyframes move {
+  0% {
+    top: 100vh;
+  }
+  49% {
+    top: -10vh;
+  }
+  51% {
+    top: -10vh;
+  }
+  100% {
+    top: -120vh;
+  }
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

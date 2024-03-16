@@ -1,4 +1,7 @@
 const link = document.getElementById('link');
+const transisii = document.getElementsByClassName('transisi');
+const animation = document.querySelector(".move div");
+
 console.log(link);
 
 function showLove() {
@@ -27,23 +30,33 @@ function showLove() {
   }, 2000);
 }
 
-setTimeout(() => {
-  if (link) {
-    link.style.opacity = 1;
-    link.style.transform = "translateY(30px)"
-    animasi();
+setInterval(bounce, 500); // Panggil fungsi bounce setiap 1 detik
+
+function bounce() {
+  // Ambil elemen dengan kelas 'link'
+  var link = document.querySelector('.link');
+
+  // Periksa apakah elemen memiliki kelas 'gerak'
+  if (link.classList.contains('gerak')) {
+    // Jika ada, hapus 'gerak' dan tambahkan 'gerak1'
+    link.classList.remove('gerak');
+    link.classList.add('gerak1');
   } else {
-    console.error("Variabel 'link' belum didefinisikan!");
+    // Jika tidak, hapus 'gerak1' dan tambahkan 'gerak'
+    link.classList.remove('gerak1');
+    link.classList.add('gerak');
   }
-}, 1000);
+}
 
-const transformValue = window.getComputedStyle(link).getPropertyValue('transform');
-console.log(transformValue);
+let halo = link.addEventListener('click', () => {
+  animation.classList.add("page-transition");
+  animation.parentElement.classList.remove("hide");
 
-function animasi() {
+  setTimeout(() => {
+    transisi();
+  }, 800);
+});
 
-  if (condition) {
-
-  }
-
+function transisi() {
+  document.location.href = 'portofolio/index.html';
 }
