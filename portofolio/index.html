@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-    <!-- link font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@500&family=Roboto&display=swap" rel="stylesheet" />
-    <!-- close font -->
-    <!-- Mengimpor file CSS Bootstrap -->
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <h4>타마요가</h4>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/output.css" />
+
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@500&family=Roboto&display=swap"
+    rel="stylesheet" />
+  <!-- close font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Mengimpor file CSS Bootstrap -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+</head>
+
+<body class="mx-5">
+  <nav id="navbar">
+    <div class="logo text-sm">
+      <h4>타마요가</h4>
+    </div>
+    <ul class="text-sm" id="nav-list">
+      <li>Home</li>
+      <li>About</li>
+      <li>Project</li>
+    </ul>
+  </nav>
+  <section id="hero" class="flex-col-reverse pt-4 ">
+    <div class="text-hero" id="text-hero">
+      <div class="name-1">
+        <h3>Reiki Aziz</h3>
+        <div class="leading-0" id="app"></div>
       </div>
-      <ul id="nav-list">
-        <li>Home</li>
-        <li>About</li>
+      <div class="name-2 pt-2">
+        <h6>
+          ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptates quod,<br />
+          sequi modi eligendi accusantium veniam eum eveniet possimus, qui quas non suscipit <br />culpa consectetur
+          iusto odio necessitatibus eius asperiores temporibus. Ipsa culpa nesciunt<br />
+          quidem tenetur qui. Animi repudiandae earum provident accusamus, qui quidem esse numquam<br />
+          voluptates officiis? Sequi, architecto.
+          <blockquote>eum? Atque maxime voluptatem veritatis</blockquote>
+        </h6>
+      </div>
+    </div>
+    <div id="pp">
+      <img class="pp w-48" src="img/pp2.png" alt="" srcset="" />
+    </div>
+  </section>
+  <section id="project" class="pt-8">
+    <nav>
+      <ul id="project-list">
+        <li>
+          <button id="web">WEBSITE</button>
+        </li>
+        <li>
+          <button id="design">DESIGN</button>
+        </li>
+        <li>
+          <button id="gallery">GALLERY</button>
+        </li>
       </ul>
     </nav>
-    <section id="hero">
-      <div id="text-hero">
-        <div class="name-1">
-          <h3>Reiki Aziz</h3>
-          <blockquote><h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, possimus!</h6></blockquote>
-        </div>
-        <div class="name-2">
-          <h6>
-            ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptates quod,<br />
-            sequi modi eligendi accusantium veniam eum eveniet possimus, qui quas non suscipit <br />culpa consectetur iusto odio necessitatibus eius asperiores temporibus. Ipsa culpa nesciunt<br />
-            quidem tenetur qui. Animi repudiandae earum provident accusamus, qui quidem esse numquam<br />
-            voluptates officiis? Sequi, architecto.
-            <blockquote>eum? Atque maxime voluptatem veritatis</blockquote>
-          </h6>
-        </div>
-      </div>
-      <div id="pp">
-        <img src="img/pp2.png" alt="" srcset="" />
-      </div>
-    </section>
-    <section id="project">
-      <nav>
-        <ul id="project-list">
-          <li>
-            <button id="web">WEBSITE</button>
-          </li>
-          <li>
-            <button id="design">DESIGN</button>
-          </li>
-          <li>
-            <button id="gallery">GALLERY</button>
-          </li>
-        </ul>
-      </nav>
-    </section>
-    <section id="skill"></section>
-    <footer></footer>
-  </body>
+  </section>
+  <section id="skill"></section>
+  <footer></footer>
+</body>
+
+<script src="js/script.js"></script>
+<script src="js/writing.js"></script>
+<!-- typewriter effect -->
+
 </html>
