@@ -70,7 +70,7 @@ a{
 .move {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 150vh;
   overflow: hidden;
 }
 
@@ -91,7 +91,7 @@ a{
 
 @keyframes move {
   0% {
-    top: 100vh;
+    top: 150vh;
   }
   49% {
     top: -10vh;
@@ -100,7 +100,7 @@ a{
     top: -10vh;
   }
   100% {
-    top: -120vh;
+    top: -150vh;
   }
 }
 
