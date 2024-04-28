@@ -49,12 +49,13 @@ function bounce() {
 }
 
 let halo = link.addEventListener('click', () => {
+  setTimeout(() => {
+    transisi();
+  }, 700);
   animation.classList.add("page-transition");
   animation.parentElement.classList.remove("hide");
 
-  setTimeout(() => {
-    transisi();
-  }, 800);
+
 });
 
 function transisi() {
