@@ -19,14 +19,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Mengimpor file CSS Bootstrap -->
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 
 </head>
 
-<body class="mx-5 overflow-x-hidden">
+<body class="mx-5 overflow-x-hidden ">
   <!-- menu mobile -->
   <!-- hamburger start -->
   <img id="hamburger-icon" class="top-0 right-2 w-7 mt-2 z-20 absolute sm:hidden" src="public/hamburger.svg" alt=""
@@ -41,17 +39,17 @@
     <div class="text-[#e6c16b]">
       <ul>
         <br><br>
-        <li>Home</li>
+        <li class="border-solid  border-b-2 border-[#e6c16b] active:bg-[#e6c16b42]">Home</li>
         <br><br>
-        <li>About</li>
+        <li class="border-solid border-b-2 border-[#e6c16b] active:bg-[#e6c16b42]">About</li>
         <br><br>
-        <li>Project</li>
+        <li class="border-solid border-b-2 border-[#e6c16b] active:bg-[#e6c16b42]">Project</li>
       </ul>
     </div>
   </section>
   <!-- menu mobile end -->
 
-  <nav id="navbar" class="flex justify-between sm:justify-around">
+  <nav id="navbar" class="flex justify-between sm:justify-around ">
     <div class="logo text-sm">
       <h4>타마요가</h4>
     </div>
@@ -83,10 +81,47 @@
         <img class="pp w-48" src="img/pp2.png" alt="" srcset="" />
       </div>
     </section>
-    <section id="project" class="pt-8">
-      <nav>
-        <ul id="project-list">
-          <li>
+    <section id="skills-container">
+      <div id="menu-skills" class="text-[#e6c16b] flex gap-5 justify-center ">
+        <div id="menu-skill" class="px-3 bg-[#e6c16b42] hover:cursor-pointer">
+          <h5>Skills</h5>
+        </div>
+        <div id="menu-tool" class="px-3 hover:cursor-pointer ">
+          <h5>Tools</h5>
+        </div>
+      </div>
+      <div id="skills" class="w-full bg-[#4a494842]  border-solid  border-b-2 border-t-2 border-[#e6c16b] text-white">
+        <div id="skill-bungkus" class="flex flex-wrap justify-center m-10 gap-5">
+          <img src="public/html.svg" alt="icon-html" class="w-14">
+          <img src="public/css.svg" alt="icon-css" class="w-14">
+          <img src="public/javascript.svg" alt="javascript-icon" class="w-14">
+          <img src="public/tailwind.svg" alt="tailwind-icon" class="w-14">
+          <img src="public/react.svg" alt="react-icon" class="w-14">
+          <img src="public/php.svg" alt="php-icon" class="w-14">
+          <img src="public/flutter.svg" alt="flutter-icon" class="w-14">
+          <img src="public/mysql.svg" alt="mysql-icon" class="w-14">
+        </div>
+      </div>
+      <div id="tools"
+        class="w-full h-80 bg-[#4a494842]  border-solid  border-b-2 border-t-2 border-[#e6c16b] text-white hidden">
+        <div id="tool-bungkus" class="flex flex-wrap justify-center m-10 gap-5">
+          <img src="public/html.svg" alt="icon-html" class="w-14">
+          <img src="public/css.svg" alt="icon-css" class="w-14">
+          <img src="public/javascript.svg" alt="javascript-icon" class="w-14">
+          <img src="public/tailwind.svg" alt="tailwind-icon" class="w-14">
+          <img src="public/react.svg" alt="react-icon" class="w-14">
+          <img src="public/php.svg" alt="php-icon" class="w-14">
+          <img src="public/flutter.svg" alt="flutter-icon" class="w-14">
+          <img src="public/mysql.svg" alt="mysql-icon" class="w-14">
+        </div>
+      </div>
+
+    </section>
+    <!-- project -->
+    <section id="content">
+      <section id="project" class="pt-8">
+        <ul id="project-list" class="inline-flex gap-6 text-center">
+          <li class="">
             <button id="web">WEBSITE</button>
           </li>
           <li>
@@ -96,9 +131,10 @@
             <button id="gallery">GALLERY</button>
           </li>
         </ul>
-      </nav>
+      </section>
+      <section id="skill"></section>
     </section>
-    <section id="skill"></section>
+    <!-- end project -->
     <footer></footer>
   </div>
 </body>
