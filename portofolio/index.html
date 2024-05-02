@@ -17,6 +17,7 @@
     rel="stylesheet" />
   <!-- close font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <!-- Mengimpor file CSS Bootstrap -->
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -24,7 +25,7 @@
 
 </head>
 
-<body class="mx-5 overflow-x-hidden ">
+<body class="mx-5 overflow-x-hidden   ">
   <!-- menu mobile -->
   <!-- hamburger start -->
   <img id="hamburger-icon" class="top-0 right-2 w-7 mt-2 z-20 absolute sm:hidden" src="public/hamburger.svg" alt=""
@@ -90,7 +91,8 @@
           <h5>Tools</h5>
         </div>
       </div>
-      <div id="skills" class="w-full bg-[#4a494842]  border-solid  border-b-2 border-t-2 border-[#e6c16b] text-white">
+      <div id="skills"
+        class="w-full bg-[#4a494842]  border-solid  border-b-2 border-t-2 border-[#e6c16b] text-white transition ease-in-out delay-400">
         <div id="skill-bungkus" class="flex flex-wrap justify-center m-10 gap-5">
           <img src="public/html.svg" alt="icon-html" class="w-14">
           <img src="public/css.svg" alt="icon-css" class="w-14">
@@ -99,20 +101,15 @@
           <img src="public/react.svg" alt="react-icon" class="w-14">
           <img src="public/php.svg" alt="php-icon" class="w-14">
           <img src="public/flutter.svg" alt="flutter-icon" class="w-14">
-          <img src="public/mysql.svg" alt="mysql-icon" class="w-14">
         </div>
       </div>
       <div id="tools"
-        class="w-full h-80 bg-[#4a494842]  border-solid  border-b-2 border-t-2 border-[#e6c16b] text-white hidden">
+        class="w-full bg-[#4a494842]  border-solid  border-b-2 border-t-2 border-[#e6c16b] text-white hidden transition ease-in-out delay-400">
         <div id="tool-bungkus" class="flex flex-wrap justify-center m-10 gap-5">
-          <img src="public/html.svg" alt="icon-html" class="w-14">
-          <img src="public/css.svg" alt="icon-css" class="w-14">
-          <img src="public/javascript.svg" alt="javascript-icon" class="w-14">
-          <img src="public/tailwind.svg" alt="tailwind-icon" class="w-14">
-          <img src="public/react.svg" alt="react-icon" class="w-14">
-          <img src="public/php.svg" alt="php-icon" class="w-14">
-          <img src="public/flutter.svg" alt="flutter-icon" class="w-14">
+          <img src="public/figma.svg" alt="icon-figma" class="w-14">
+          <img src="public/canva.svg" alt="icon-canva" class="w-14">
           <img src="public/mysql.svg" alt="mysql-icon" class="w-14">
+          <img src="public/premier.svg" alt="premier-icon" class="w-14">
         </div>
       </div>
 
@@ -120,17 +117,45 @@
     <!-- project -->
     <section id="content">
       <section id="project" class="pt-8">
-        <ul id="project-list" class="inline-flex gap-6 text-center">
-          <li class="">
-            <button id="web">WEBSITE</button>
-          </li>
-          <li>
-            <button id="design">DESIGN</button>
-          </li>
-          <li>
-            <button id="gallery">GALLERY</button>
-          </li>
-        </ul>
+        <div id="project-list" class="text-[#e6c16b] flex gap-5 justify-center">
+          <div id="web-button" class="px-3 bg-[#e6c16b42] hover:cursor-pointer">
+            <h5 id="web">WEBSITE</h5>
+          </div>
+          <div id="design-button" class="px-3 hover:cursor-pointer">
+            <h5 id="design">DESIGN</h5>
+          </div>
+          <div id="gallery-button" class="px-3 hover:cursor-pointer">
+            <h5 id="gallery">GALLERY</h5>
+          </div>
+        </div>
+        <div id="web-bungkus"
+          class="w-full  bg-[#4a494842]  border-solid  border-b-2 border-t-2 border-[#e6c16b] text-black">
+          <div id="web-container" class="m-5">
+            <div id="card" class="w-52 shadow-lg rounded-lg hover:shadow-blue-500/50 flex-col text-white ">
+              <div id="img-card" class=" ">
+                <img class="" src="public/gohealing.png" alt="">
+              </div>
+              <div id="caption-card" class="p-2 rounded-b-lg border-solid border-[1px] border-[#e6c16b]">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, magni similique. Ipsam autem rerum
+                  ratione facere nisi consequuntur molestias cum maiores omnis quasi, adipisci iusto!</p>
+                <br>
+                <a href="#">
+                  <p>
+                    view Project >>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="design-bungkus"
+          class="w-full h-1/2 bg-[#4a494842]  border-solid  border-b-2 border-t-2 border-[#e6c16b] text-white hidden">
+          <h3>ini tab design</h3>
+        </div>
+        <div id="gallery-bungkus"
+          class="w-full h-1/2 bg-[#4a494842]  border-solid  border-b-2 border-t-2 border-[#e6c16b] text-white hidden">
+          <h3>ini tab gallery</h3>
+        </div>
       </section>
       <section id="skill"></section>
     </section>
@@ -139,6 +164,8 @@
   </div>
 </body>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/writing.js"></script>
 <!-- typewriter effect -->
