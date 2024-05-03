@@ -98,7 +98,6 @@ nav ul li:hover {
 #project {
   /* padding-top: 30vh; */  
   background-color: rgb(8, 7, 8);
-  height: 100vh;
 }
 
 #web,
@@ -112,7 +111,9 @@ nav ul li:hover {
   font-size: 15px;
 }
 
-
+.hide{
+  display:none;
+}
 /* #web,
 #design,
 #gallery:focus {

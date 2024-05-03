@@ -17,6 +17,20 @@ const galleryButton = document.getElementById('gallery-button')
 const webContainer = document.getElementById('web-bungkus')
 const designContainer = document.getElementById('design-bungkus')
 const galleryContainer = document.getElementById('gallery-bungkus')
+const cards = document.querySelectorAll('.card2')
+const cardsD = document.querySelectorAll('.card3')
+const cardsG = document.querySelectorAll('.card4')
+const more = document.getElementById('more')
+const less = document.getElementById('less')
+const moreD = document.getElementById('more-d')
+const lessD = document.getElementById('less-d')
+const moreG = document.getElementById('more-G')
+const lessG = document.getElementById('less-G')
+const username = document.getElementById('username')
+const email = document.getElementById('email')
+const pesan = document.getElementById('pesan')
+const kirim = document.getElementById('kirim')
+const alert = document.getElementById('alert')
 
 let currIndexskill = 0
 let currIndexproject = 0
@@ -106,7 +120,7 @@ function ganti(target, targetContent, teman, saudara, temanContent, saudaraConte
         saudara.classList.remove('bg-[#e6c16b42]')
         target.classList.add('bg-[#e6c16b42]')
 
-        console.log(currIndexproject)
+        // console.log(currIndexproject)
 
 
         setTimeout(() => {
@@ -129,3 +143,62 @@ designButton.addEventListener('click', () => {
 galleryButton.addEventListener('click', () => {
     ganti(galleryButton, galleryContainer, webButton, designButton, webContainer, designContainer, 2)
 })
+
+function lebih(cards, more, less) {
+    cards.forEach(card => {
+        card.classList.remove('hidden')
+    });
+    more.classList.add('hidden')
+    less.classList.remove('hidden')
+}
+
+function dikit(cards, less, more) {
+    cards.forEach(card => {
+        card.classList.add('hidden');
+    });
+    less.classList.add('hidden')
+    more.classList.remove('hidden')
+}
+
+more.addEventListener('click', () => {
+    // console.log('ini more')
+    lebih(cards, more, less)
+})
+less.addEventListener('click', () => {
+    dikit(cards, less, more)
+});
+
+moreD.addEventListener('click', () => {
+    // console.log('ini more')
+    lebih(cardsD, moreD, lessD)
+})
+lessD.addEventListener('click', () => {
+    dikit(cardsD, lessD, moreD)
+});
+
+moreG.addEventListener('click', () => {
+    // console.log('ini more')
+    lebih(cardsG, moreG, lessG)
+})
+lessG.addEventListener('click', () => {
+    dikit(cardsG, lessG, moreG)
+});
+
+kirim.addEventListener('click', () => {
+    if (username.value === '' || pesan.value === '') {
+        alert.classList.remove('hidden');
+        setTimeout(() => {
+            location.href = '#';
+        }, 100);
+    } else {
+        var gabungan = 'Nama:%0A' + username.value + '%0AEmail:%0A' + email.value + '%0APesan:%0A' + pesan.value;
+
+        var token = '6916554317:AAFYiMSaG-EEp1EZetgKhGrtcmgXG1OBjNk'; // Ganti dengan token bot yang kamu buat
+        var grup = '-1002020558670'; // Ganti dengan chat id dari bot yang kamu buat
+
+        $.ajax({
+            url: `https://api.telegram.org/bot${token}/sendMessage?chat_id=${grup}&text=${gabungan}&parse_mode=html`,
+            method: `POST`,
+        })
+    }
+});
